@@ -1,0 +1,8 @@
+.pio
+.vscode
+build
+
+# For the purpose of the demo
+components/*
+managed_components
+dependencies.lock
