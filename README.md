@@ -5,7 +5,7 @@ But then we wouldn't learn much.
 # So what do we do?
 
 Instead, this project creates a running system by using the PlatformIO-dependency management, by:
-1. Create a normal PlatformIO project _(Instead yuu've cloned this)_
+1. Create a normal PlatformIO project _(Done. This is it.)_
 2. Edit the main.c _(Done)_
 3. Create a folder called Components _(Done, but from here you continue)_
 4. In `platform.ini` - change to the ESP32 you want to update. Find it in Devices. 
@@ -15,7 +15,8 @@ Instead, this project creates a running system by using the PlatformIO-dependenc
 8. Click "s" and enter to save the configuration. 
 9.  The `sdkconfig.az-delivery-devkit-v4` config file is created and will be used in your build.
 10. Run the Upload and Monitor task. 
-11. If there is an ESP32 (of any kind, probably) connected, it will start reporting available memory and warn, as the warning level has been set low.
+11. If there is an ESP32 (of any kind, probably) connected, it will start reporting boot up available memory and warn, as the warning level has been set low. 
+12. It may take a short while as while the esp32_exception_decoder is good in that it reports what line the error happened, it is kind of slow to start. 
 
 
 
