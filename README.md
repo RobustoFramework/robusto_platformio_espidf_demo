@@ -8,13 +8,16 @@ Instead, this project creates a running system by using the PlatformIO-dependenc
 1. Create a normal PlatformIO project _(Instead yuu've cloned this)_
 2. Edit the main.c _(Done)_
 3. Create a folder called Components _(Done, but from here you continue)_
-4. Install Robusto - Run 'pio pkg install --storage-dir ./components  --library "robusto/robusto"'
-5. Click the "General->Run menuconfig" task in the PlatformIO task bar.
-6. In Robusto configuration -> Memory, check "Do memory monitoring", just to have something happen.
-7. Click "s" and enter to save the configuration. 
-8. The `sdkconfig.az-delivery-devkit-v4` config file is created and will be used in your build.
-9. Run the Upload and Monitor task. 
-10. If there is an ESP32 (of any kind, probably), it will start reporting available memory.
+4. In `platform.ini` - change to the ESP32 you want to update. Find it in Devices. 
+5. Install Robusto - Run 'pio pkg install --storage-dir ./components  --library "robusto/robusto"'
+6. Click the "General->Run menuconfig" task in the PlatformIO task bar.
+7. In Robusto configuration -> Memory, check "Do memory monitoring", just to have something happen.
+8. Click "s" and enter to save the configuration. 
+9.  The `sdkconfig.az-delivery-devkit-v4` config file is created and will be used in your build.
+10. Run the Upload and Monitor task. 
+11. If there is an ESP32 (of any kind, probably) connected, it will start reporting available memory and warn, as the warning level has been set low.
+
+
 
 # Why, and what does it show
 Lots.
