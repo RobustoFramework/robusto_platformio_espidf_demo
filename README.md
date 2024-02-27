@@ -1,11 +1,12 @@
 # Robusto/ESP-IDF/PlatformIO-dependencies
-To just get going with hacking, a more logical way to create an Robusto + ESP-IDF project by adding an idf_component.yml and add it there. Then, a `managed_components`-folder would appear with all the components brought in by the ESP-IDF dependency management. 
+To just get going with hacking, a more logical way is to create an Robusto + ESP-IDF project and an idf_component.yml.<br/>
+Then, a `managed_components`-folder would appear with all the components brought in by the ESP-IDF dependency management. <br/>
 But then we wouldn't learn much. 
 
 # So what do we do?
 
-Instead, this project creates a running system by using the PlatformIO-dependency management, by:
-1. Create a normal PlatformIO project _(Done. This is it.)_
+Instead, this project creates a running system by using the PlatformIO-dependency management:
+1. Create a normal PlatformIO project _(Done. This is that project.)_
 2. Edit the main.c _(Done)_
 3. Create a folder called Components _(Done, but from here you continue)_
 4. In `platform.ini` - change to the ESP32 you want to update. Find it in Devices. 
