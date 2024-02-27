@@ -23,10 +23,10 @@ Instead, this project creates a running system by using the PlatformIO-dependenc
 
 # Why, and what does it show
 Lots.
-1. Because we specified `--storage-dir ./components`in step 4, the dependencies didn't end up in `.pio/libdeps/az-delivery-devkit-v4`, but in the components folder.
-2. We did this, because the menuconfig implementation in PlatformIO for ESP-IDF does not include the `.pio/libdeps/az-delivery-devkit-v4` when it looks for KConfig (menu items) and KConfig.projbuild (top menu items). 
-3. So if we hadn't done this, the esp_modem component would fail to build have compiled
-4. This because it requires the CONFIG_ESP_MODEM_CMUX_DELAY_AFTER_DLCI_SETUP[^4] setting to be set to something. <br/>And the menuconfig application is what is generating those settings in, step 8 above. 
+1. Because we specified `--storage-dir ./components`in step 4, the dependencies didn't end up in `.pio/libdeps/az-delivery-devkit-v4`, but in the `components` folder.
+2. We did this, because the menuconfig implementation in PlatformIO for ESP-IDF does not look in `.pio/libdeps/az-delivery-devkit-v4` for KConfig (menu items) and KConfig.projbuild (top menu items) -files. 
+3. So if we hadn't done this, the esp_modem component would have failed to build.
+4. This because it requires the CONFIG_ESP_MODEM_CMUX_DELAY_AFTER_DLCI_SETUP[^4] setting to be set to something.<br/>And the menuconfig application is what is generating those settings, step 8 above. 
 5. But wait, a `managed_components` folder appeared with RadioLib in it even though no PlatformIO dependency was there? <br />  That, friends is actually a mystery. Perhaps the ESP-IDF subsystem reacts to the presence of the idf_component.yml. 
 
 
