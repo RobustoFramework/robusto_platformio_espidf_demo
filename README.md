@@ -10,14 +10,14 @@ Instead, this project creates a running system by using the PlatformIO-dependenc
 2. Edit the main.c _(Done)_
 3. Create a folder called Components _(Done, but from here you continue)_
 4. In `platform.ini` - change to the ESP32 you want to update. Find it in Devices. 
-5. Install Robusto - Run 'pio pkg install --storage-dir ./components  --library "robusto/robusto"'
-6. Click the "General->Run menuconfig" task in the PlatformIO task bar.
-7. In Robusto configuration -> Memory, check "Do memory monitoring", just to have something happen.
-8. Click "s" and enter to save the configuration. 
-9.  The `sdkconfig.az-delivery-devkit-v4` config file is created and will be used in your build.
-10. Run the Upload and Monitor task. 
-11. If there is an ESP32 (of any kind, probably) connected, it will start reporting boot up available memory and warn, as the warning level has been set low. 
-12. It may take a short while as while the esp32_exception_decoder is good in that it reports what line the error happened, it is kind of slow to start. 
+5. Install Robusto - Run `pio pkg install --storage-dir ./components  --library "robusto/robusto"`
+7. Click the "General->Run menuconfig" task in the PlatformIO task bar.
+8. In Robusto configuration -> Memory, check "Do memory monitoring", just to have something happen.
+9. Click "s" and enter to save the configuration. 
+10.  The `sdkconfig.az-delivery-devkit-v4` config file is created and will be used in your build.
+11. Run the Upload and Monitor task. 
+12. If there is an ESP32 (of any kind, probably) connected, it will start reporting boot up available memory and warn, as the warning level has been set low. 
+13. It may take a short while as while the esp32_exception_decoder is good in that it reports what line the error happened, it is kind of slow to start. 
 
 
 
